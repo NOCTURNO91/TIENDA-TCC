@@ -1,23 +1,10 @@
 //DATOS DE LA BD
 let productosBD=[
-
-    {
-        nombre:"Downhill",
-        precio:55000,
-        cantidad:0,
-        fotos:['https://firebasestorage.googleapis.com/v0/b/quiroz555tiendatcc.appspot.com/o/imagen1.jpg?alt=media&token=e57b9a34-1430-4b52-ae40-a1a2e16a1058','https://firebasestorage.googleapis.com/v0/b/quiroz555tiendatcc.appspot.com/o/imagen1.jpg?alt=media&token=e57b9a34-1430-4b52-ae40-a1a2e16a1058'],
-        descripcion:'moto de alto cilindrage'
-    },
-    {
-        nombre:"Downhill",
-        precio:55000,
-        cantidad:0,
-        fotos:['https://firebasestorage.googleapis.com/v0/b/quiroz555tiendatcc.appspot.com/o/imagen1.jpg?alt=media&token=e57b9a34-1430-4b52-ae40-a1a2e16a1058','https://firebasestorage.googleapis.com/v0/b/quiroz555tiendatcc.appspot.com/o/imagen1.jpg?alt=media&token=e57b9a34-1430-4b52-ae40-a1a2e16a1058'],
-        descripcion:'moto de alto cilindrage'
-    },
 ]
 
-//PASOS PARA PINTAR (HACER RENDER) DE ETIQUETAS HTML DESDE JS
+//funcion para pintar productos en la tienda
+export function pintarProductos(productos){
+    //PASOS PARA PINTAR (HACER RENDER) DE ETIQUETAS HTML DESDE JS
 //TRAVERSING
 
 //1crear una referencia en memoria(variable) que almacena
@@ -25,7 +12,7 @@ let productosBD=[
 let fila=document.getElementById("fila")
 
 //2.RECORRO EL ARREGLO DE DATOS Y APLICO TRAVERSING
-productosBD.forEach(function(producto){
+productos.forEach(function(producto){
 
     //2.1 creando una colomna desde JS
     let columna=document.createElement("div")
@@ -48,7 +35,6 @@ productosBD.forEach(function(producto){
     //2.4 creando el nombre del producto
     let nombreproducto=document.createElement("h3")
     nombreproducto.textContent=producto.nombre
-    nombreproducto.textContent=producto.precio
 
     //2.4 creando el precio del producto
     let precioproducto=document.createElement("h4")
@@ -63,6 +49,12 @@ productosBD.forEach(function(producto){
     columna.addEventListener("mauseleave",function(){
         fotoproducto.src=producto.fotos[0]
     })
+
+}
+
+
+
+
     
 
 
@@ -74,10 +66,16 @@ productosBD.forEach(function(producto){
 tarjeta.appendChild(fotoproducto)
 tarjeta.appendChild(nombreproducto)
 tarjeta.appendChild(precioproducto)
-tarjeta.appendChild(tarjeta)
+columna.appendChild(tarjeta)
 fila.appendChild(columna)
 }
 )
+
+let buscador=document.getElementById("busqueda")
+
+buscador.addEventListener("keypress",function(evento){
+    console.log(evento.target.value)
+})
 
 //console.log(productosBD)
 
