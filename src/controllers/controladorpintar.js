@@ -25,6 +25,11 @@ export function pintarProductos(productos){
         foto.classList.add("img-fluid","w-100",'h-100')
         foto.src=producto.fotos[0]
 
+        let descripcion = document.createElement('p')
+        descripcion.classList.add("d-none")
+        descripcion.textContent = producto.descripcion
+        console.log(producto)
+
         //2.4 creamos el nombre
         let nombre=document.createElement("h3")
         nombre.textContent=producto.nombre
@@ -47,6 +52,8 @@ export function pintarProductos(productos){
         tarjeta.appendChild(foto)
         tarjeta.appendChild(nombre)
         tarjeta.appendChild(precio)
+        tarjeta.appendChild(descripcion)
+  
 
         columna.appendChild(tarjeta)
 
