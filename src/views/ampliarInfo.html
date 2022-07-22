@@ -31,7 +31,7 @@ rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tj
                   <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                       <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="../../index.html">Home</a>
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" href="#">Features</a>
@@ -43,6 +43,18 @@ rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tj
                         <a class="nav-link disabled">Disabled</a>
                       </li>
                     </ul>
+
+                    <ul class="navbar-nav ms-auto">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" 
+                        href="#"><i class="bi bi-cart-plus-fill"></i>
+                        <span class="position-absolute top-12 start-10
+                        translate-middle badge rounded-pill bg-danger">
+                          99+
+                          <span class="visually-hidden">unread messages</span>
+                        </span>
+                      </a>
+                      </li>
                   </div>
                 </div>
             </nav>
@@ -54,10 +66,12 @@ rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tj
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-12 col-md-5">
-                        <img src="https://firebasestorage.googleapis.com/v0/b/quiroz555tiendatcc.appspot.com/o/santacruz1.jpg?alt=media&token=54f51452-8ab4-4272-8095-b27fa190f8de" alt="" class="img-fluid w-100">
-                    </div>
-                    <div class="col-12 col-md-6">
-                        <h2>Santa Cruz v10</h2>
+                        <img src="" alt="" class="img-fluid w-100" id="foto">
+                        </div>
+                      <div class="col-12 col-md-6">
+                        <h3 id="nombre"></h3>
+                        <h2 id="precio" class="fw-bold"></h2>
+                        <h5 id="descripcion"></h5>
                         <i class="bi bi-star-fill"></i>
                         <i class="bi bi-star-fill"></i>
                         <i class="bi bi-star-fill"></i>
@@ -77,9 +91,10 @@ rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tj
 
                         <div class="mb-3 mt-4">
                          <label for="fotm-label">Cantidad</label> 
-                        <input type="number" placeholder="1" id="Cantidad">
+                        <input type="number" placeholder="1" 
+                        id="cantidad" vakue="1">
                         </div>
-                        <button type="button" class="btn btn-primary">Añadir al carrito</button>
+                        <button id="agregar" type="button" class="btn btn-primary">Añadir al carrito</button>
                 </div>
             </div>
         </section>
