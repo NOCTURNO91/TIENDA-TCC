@@ -4,10 +4,15 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(255,162,0,1) 100%, rg
 }
 
 .fuente{
-    font-family: 'Great Vibes', cursive;
+    font-family: 'Cinzel', serif;
 
 }
 
 .fuente2{
     font-size: 100px;
+}
+
+.logo{
+    height: 45px;
+    width: 80px;
 }
