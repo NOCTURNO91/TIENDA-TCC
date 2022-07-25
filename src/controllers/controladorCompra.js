@@ -31,17 +31,23 @@ descripcion.textContent=producto.descripcion
 //capturar la cantidad del producto seleccionado
 //capturamos el value del input
 
+let cantidad =document.getElementById("cantidad").value
+producto.cantidad=cantidad
+console.log(producto)
+
+//agrego un nuevo atributo(cantidad) al objeto producto
+
 
 let botonagregar=document.getElementById("agregar")
 botonagregar.addEventListener("click", function(){
-   let cantidad =document.getElementById("cantidad").value
-   producto.cantidad=cantidad
-   console.log(producto)
+//se agrega la alerta
 
-})
+let alerta=document.getElementById("alerta")
+alerta.classList.remove("invisible")
 
-
-//agrego un nuevo atributo(cantidad) al objeto producto
+setTimeout(function(){
+    alerta.classList.add("invisible")
+},3000)
 
 
 //agregando un nuevo elemnto a un arreglo
@@ -53,6 +59,12 @@ localStorage.setItem("carrito",JSON.stringify(carrito))
 
 console.log(carrito)
 //agregando  un producto al carrito de compras
+
+
+
+})
+
+
 
 
 
