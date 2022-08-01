@@ -61,6 +61,12 @@ console.log(carrito)
 //agregando  un producto al carrito de compras
 
 
+//reccoriendo un arreglo
+carrito.forEach(funcion(producto){
+    console.log(producto.cantidad)
+})
+
+
 
 })
 
