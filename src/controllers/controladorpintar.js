@@ -39,6 +39,11 @@ export function pintarProductos(productos){
         precio.classList.add("fw.bold")
         precio.textContent="$"+producto.precio
 
+        let popularidad=document.createElement("i")
+        popularidad.classList.add("d-none")
+        popularidad.textContent = producto.descripcion
+        
+
         //deteccion de mouse
         columna.addEventListener("mouseover",function(evento){
             foto.src=producto.fotos[1]

@@ -50,12 +50,16 @@ export function pintarResumencompra(fotoURL,nombreMensaje,banderaBoton,banderaPr
 }
 
 let suma=0
+let carrito=(JSON.parse(localStorage.getItem("carrito")))
 carrito.forEach(function(producto){
     console.log(producto.cantidad)
     suma=suma+Number(producto.cantidad)
 })
-localStorage.setItem("cantidad",suma)
-bolitaCantidad.textContent=suma
+    // localStorage.setItem("cantidad",suma)
+    // bolitaCantidad.textContent=suma 
+    
+    // let bolitaCantidad=document.getElementById("contadorCarrito")
+    // bolitaCantidad.textContent=suma
 
-let bolitaCantidad=document.getElementById("contadorCarrito")
-bolitaCantidad.textContent=s
+
+
