@@ -41,7 +41,7 @@ export function pintarProductos(productos){
 
         let popularidad=document.createElement("i")
         popularidad.classList.add("d-none")
-        popularidad.textContent = producto.descripcion
+        popularidad.textContent = producto.popularidad
         
 
         //deteccion de mouse
@@ -58,6 +58,7 @@ export function pintarProductos(productos){
         tarjeta.appendChild(nombre)
         tarjeta.appendChild(precio)
         tarjeta.appendChild(descripcion)
+        tarjeta.appendChild(popularidad)
   
 
         columna.appendChild(tarjeta)

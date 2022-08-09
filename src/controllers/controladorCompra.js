@@ -24,7 +24,19 @@ let descripcion=document.getElementById("descripcion")
 descripcion.textContent=producto.descripcion
 
 
+let baseEstrellas=document.getElementById("contenedorEstrellas")
+    for(let i=1; i<=Number(producto.popularidad); i++){
 
+        let estrella=document.createElement("i")
+        estrella.classList.add("bi","bi-star-fill")
+        estrella.setAttribute('id','estrella')
+        baseEstrellas.appendChild(estrella)
+    }
+
+
+
+
+console.log(producto.popularidad)
 
 
 
