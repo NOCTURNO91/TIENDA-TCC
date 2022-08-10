@@ -13,10 +13,13 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(255,162,0,1) 100%, rg
 }
 
 .logo{
-    height: 45px;
-    width: 80px;
+    height: 70px;
+    width: 100px;
+    margin-right: 460px;
+    margin-left: 250px;
 }
 
 #estrella{
  color: rgb(255, 208, 0);   
 }
+

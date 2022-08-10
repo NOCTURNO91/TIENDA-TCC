@@ -8,7 +8,7 @@ export let productosBD=[
         precio:5500000,
         cantidad:0,
         fotos:['https://firebasestorage.googleapis.com/v0/b/quiroz555tiendatcc.appspot.com/o/YT1.jpg?alt=media&token=3310897b-9a24-42d2-a1e3-153cc03a4446','https://firebasestorage.googleapis.com/v0/b/quiroz555tiendatcc.appspot.com/o/YT2.jpg?alt=media&token=b88fb6f6-7d44-4239-a2fa-4ccefb9b6409'],
-        descripcion:'Bicicleta Gama Alta',
+        descripcion:'Bicicleta de montaña nivel Downhill, marco en aluminio suspension boxxer con recorrido de 220mm',
         popularidad:5
     },
     {
@@ -96,7 +96,7 @@ export let productosBD=[
         precio:75222000,
         cantidad:0,
         fotos:['https://firebasestorage.googleapis.com/v0/b/quiroz555tiendatcc.appspot.com/o/gw1.jpg?alt=media&token=95ee5c00-a9c8-4bf4-9421-0a324cc4aa21','https://firebasestorage.googleapis.com/v0/b/quiroz555tiendatcc.appspot.com/o/gw2.jpg?alt=media&token=743b10b4-a2c1-4182-b5b8-d59c68506c0d'],
-        descripcion:'Bicicleta Gama Baja',
+        descripcion:'Bicicleta Gama Baja con marco en hierro frenos mecanicos',
         popularidad:2
     },
     ]

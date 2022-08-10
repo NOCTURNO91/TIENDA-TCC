@@ -30,6 +30,10 @@ export function pintarProductos(productos){
         descripcion.textContent = producto.descripcion
         console.log(producto)
 
+        let caracteristicas = document.createElement('p')
+        caracteristicas.textContent = producto.caracteristicas
+        console.log(producto)
+
         //2.4 creamos el nombre
         let nombre=document.createElement("h3")
         nombre.textContent=producto.nombre
@@ -59,6 +63,7 @@ export function pintarProductos(productos){
         tarjeta.appendChild(precio)
         tarjeta.appendChild(descripcion)
         tarjeta.appendChild(popularidad)
+        tarjeta.appendChild(caracteristicas)
   
 
         columna.appendChild(tarjeta)

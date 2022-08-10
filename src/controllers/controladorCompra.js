@@ -21,6 +21,7 @@ let precio=document.getElementById("precio")
 precio.textContent=producto.precio
 
 let descripcion=document.getElementById("descripcion")
+descripcion.classList.add('descrip')
 descripcion.textContent=producto.descripcion
 
 
