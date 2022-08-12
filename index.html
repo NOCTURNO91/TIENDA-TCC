@@ -38,20 +38,20 @@ rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tj
                 <a class="nav-link" href="./tienda.html">Nuestras Bikers</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
+                <a class="nav-link" href="#"></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled">Disabled</a>
+                <a class="nav-link disabled">Envíos GRATIS* por compras superiores a $250.000 COP</a>
               </li>
             </ul>
 
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./resumencompra.html"
+                <a class="nav-link active" aria-current="page" href="./src/views/resumencompra.html"
                 href="#"><i class="bi bi-cart-plus-fill"></i>
                 <span class="position-absolute top-12 start-10
                 translate-middle badge rounded-pill bg-danger">
-                  99+
+                  
                   <span class="visually-hidden" id="controladorCarrito">unread messages</span>
                 </span>
               </a>
@@ -66,11 +66,14 @@ rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tj
         <section class="fondo">
             <video class="w-100" src="./assets/video/videobanner.mp4" muted autoplay loop></video>
         </section>
-
+        <img class="img-fluid  imagen" src="./assets/img/fondoGrande.png" alt="foto">
+        <img class="img-fluid  imagen" src="./assets/img/fondoGrande2.png" alt="foto">
         <section class="fondo">
             <div class="container">
                 <div class="row mt-5">
-                    <div class="col-6 align-self-center text-center">
+                  <h2 class="text-center">Tienda Downhill Medellin</h2>
+                   
+                    <div class="align-self-center text-center">
                         <h4>Registrate</h4>
                         <h4>Encuentra las Mejores Bikers</h4>
                         <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas">
@@ -104,9 +107,9 @@ rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tj
                       </div>
 
                     </div>
-                    <div class="col-6">
-                        <h4 class="text-center">Tienda Downhill Medellin</h4>
-                        <img class="img-fluid w-100" src="./assets/img/tiendaFondo.jfif" alt="foto">
+                <div class="col-6">
+                        
+                        <!-- <img class="img-fluid w-100" src="./assets/img/tiendaFondo.jfif" alt="foto"> -->
                     </div>
                 </div>
             <div class="row">
@@ -142,25 +145,28 @@ rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tj
         </section>
 
     </main>
-    <footer>
+    <footer >
       <div class="container-fluid my-5">
 
         <div class="row">
            <div class="col-xs-12 col-md-6 col-lg-3">
-             <p class="h3">Super Bikers</p>
+             <p class="h3 text-light">Super Bikers</p>
+             <div class="mb-2"> <a class="text-white text-decoration-none" href="#"> <i class="bi bi-alarm-fill"></i> Lunes a Viernes: 8AM - 6 PM</a></div>
+             <div class="mb-2"> <a class="text-white text-decoration-none" href="#"> <i class="bi bi-telephone-fill"></i> + (604) 4442404</a></div>
+             <div class="mb-2"> <a class="text-white text-decoration-none" href="#"> <i class="bi bi-building"></i> Tienda Medellin</a></div>
            </div>
            <div class="col-xs-12 col-md-6 col-lg-3">
-             <p class="h5 mb-3">Diseñador</p>
+             <p class="h5 mb-3 text-light">Diseñador</p>
             <div class="mb-2"> <a class="text-white text-decoration-none" href="https://github.com/NOCTURNO91">GitHub</a></div>
             <div class="mb-2"> <a class="text-white text-decoration-none" href="#">Carlos Quiroz</a></div>
            </div>
            <div class="col-xs-12 col-md-6 col-lg-3">
-             <p class="h5 mb-3">Links</p>
+             <p class="h5 mb-3 text-light">Links</p>
              <div class="mb-2"> <a class="text-white text-decoration-none" href="#">Terms & Conditions</a></div>
              <div class="mb-2"> <a class="text-white text-decoration-none" href="#">Privacy Policy</a></div>
            </div>
            <div class="col-xs-12 col-md-6 col-lg-3"> 
-             <p class="h5 mb-3">Contactanos</p>
+             <p class="h5 mb-3 text-light">Contactanos</p>
              <div class="mb-2"> <a class="text-white text-decoration-none" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
               <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
             </svg></a></div>
@@ -173,14 +179,15 @@ rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tj
            </div>
   
            <div class="col-xs-12 pt-4"></div>
-           <p class="text-white text-center">Copyright - Allrights reserved © 2022</p>
+           <p class="text-white text-center">SuperBikers Colombia - Allrights reserved © 2022</p>
         </div>
   
       </div>
     </footer>
     <!-- JavaScript Bundle with Popper -->
    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    script src="./src/controllers/controladorCarritoIndex.js" 
     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>    
 </body>
 </html>

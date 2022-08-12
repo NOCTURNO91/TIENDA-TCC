@@ -1,7 +1,11 @@
 let suma=0
-carrito.forEach(function(producto){
-    console.log(producto.cantidad)
-    suma=suma+Number(producto.cantidad)
-})
-localStorage.setItem("cantidad",suma)
+
+if(localStorage.getItem("cantidad")!=null){
+    suma=localStorage.getItem("cantidad")
+    console.log("null")
+}else{
+    suma=0
+}
+
+let bolitaCantidad=document.getElementById("controladorCarrito")
 bolitaCantidad.textContent=suma
